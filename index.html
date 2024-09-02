@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <h1 class="h1">SBOWM To Do List</h1>
+    <div class="big-container">
+      <div class="boxContainer">
+        <input id="toDoItem" type="text" placeholder="Add To Do List Items" />
+        <input type="date" class="js-date-input" />
+        <button class="addButton" onclick="addToDoItem()">Add</button>
+        <br />
+        <div class="buttonDiv">
+          <button class="button">Incomplete</button>
+          <button class="button">Complete</button>
+        </div>
+        <div class="paragraphDiv"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
