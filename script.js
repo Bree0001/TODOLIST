@@ -2,14 +2,14 @@ let toDoListArrays = [];
 
 let toDoListHTML = '';
 
+
 function generateHTML(){
-toDoListHTML = '';
 for(let i = 0; i < toDoListArrays.length; i++){
   const toDoObject = toDoListArrays[i];
   const name = toDoObject.name;
   const dueDate = toDoObject.dueDate;
-  const html = `<p class="paragraph-JS">
-  ${name} ${dueDate} 
+  const html = `<p class="paragraph-JS"> <div>${name}</div><div>${dueDate} </div>
+   
   <button onclick="toDoListArrays.splice(${i}, 1); deleteToDoItem()">Delete</button>
   </p>`;
   console.log(html);
